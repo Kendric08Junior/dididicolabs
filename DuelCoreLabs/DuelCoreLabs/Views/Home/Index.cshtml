@@ -1,0 +1,122 @@
+@{
+    ViewData["Title"] = "Home | Di-Core Labs";
+}
+
+<section class="dc-hero">
+    <div class="dc-wrap" style="width:100%;">
+        <div class="dc-hero-grid">
+            <div>
+                <span class="dc-eyebrow">Independent development studio &middot; South Africa</span>
+                <h1 class="dc-hero-title">Di-Core Labs<span class="dc-accent">.</span></h1>
+                <p class="dc-hero-tag">Websites and systems,<br />built around your business.</p>
+                <p class="dc-hero-desc">
+                    We're Junior and Kananelo &mdash; two developers who build custom websites and business software.
+                    You'll work directly with us, from the first conversation to launch and beyond.
+                </p>
+                <div class="dc-hero-btns">
+                    <a asp-controller="Home" asp-action="Contact" class="dc-btn dc-btn-primary">
+                        Tell Us About Your Project
+                        <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+                    </a>
+                    <a asp-controller="Home" asp-action="Services" class="dc-btn dc-btn-ghost">
+                        Our Services
+                        <svg class="dc-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+                    </a>
+                </div>
+                <div class="dc-hero-founders">
+                    <strong>Junior Dube &amp; Kananelo Motuba</strong>
+                    <span>Founders &amp; developers</span>
+                </div>
+            </div>
+            <div class="dc-hero-visual">
+                <img src="~/images/2.png" alt="Di-Core Labs silver DC logo with blue circuitry" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="dc-hero-foot">
+    <div class="dc-wrap">
+        <span>Based in South Africa. Working worldwide.</span>
+        <span>Websites / Business systems / Design / Support</span>
+    </div>
+</div>
+
+<section class="dc-section">
+    <div class="dc-wrap">
+        <div class="dc-section-head">
+            <span class="dc-eyebrow">What We Do</span>
+            <h2 class="dc-section-title">Built to solve real problems.</h2>
+            <p class="dc-section-sub">Custom work, no templates &mdash; from a single landing page to a full business system.</p>
+        </div>
+
+        <div class="dc-svc-grid">
+            <div class="dc-svc-card">
+                <svg class="dc-svc-icon" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></svg>
+                <h3>Website Development</h3>
+                <p>Custom websites built from scratch &mdash; fast, beautiful, tailored to your business.</p>
+            </div>
+            <div class="dc-svc-card">
+                <svg class="dc-svc-icon" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2" /><polyline points="2 17 12 22 22 17" /><polyline points="2 12 12 17 22 12" /></svg>
+                <h3>System Development</h3>
+                <p>End-to-end business systems, dashboards, databases and automation.</p>
+            </div>
+            <div class="dc-svc-card">
+                <svg class="dc-svc-icon" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="M2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></svg>
+                <h3>UI/UX Design</h3>
+                <p>Interfaces that look stunning and feel intuitive for your users.</p>
+            </div>
+            <div class="dc-svc-card">
+                <svg class="dc-svc-icon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg>
+                <h3>Maintenance &amp; Support</h3>
+                <p>We stay with you after launch. Ongoing support and updates included.</p>
+            </div>
+        </div>
+
+        <div class="dc-more">
+            <a asp-controller="Home" asp-action="Services" class="dc-btn dc-btn-primary">
+                See All Services
+                <svg class="dc-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="dc-section">
+    <div class="dc-wrap">
+        <div class="dc-section-head">
+            <span class="dc-eyebrow">The Team</span>
+            <h2 class="dc-section-title">Who's behind the work.</h2>
+        </div>
+
+        <div class="dc-team-grid">
+            <div class="dc-person">
+                <div class="dc-av">JD</div>
+                <div>
+                    <h3>Junior Dube</h3>
+                    <p class="dc-role">Co-Founder &amp; Lead Developer</p>
+                    <p class="dc-bio">Full-stack developer building clean, scalable websites and systems that make a real impact for businesses.</p>
+                </div>
+            </div>
+            <div class="dc-person">
+                <div class="dc-av">KM</div>
+                <div>
+                    <h3>Kananelo Motuba</h3>
+                    <p class="dc-role">Co-Founder &amp; Systems Architect</p>
+                    <p class="dc-bio">Systems specialist designing robust, efficient solutions that power modern businesses forward.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dc-cta">
+    <div class="dc-wrap">
+        <h2>Ready to build something great?</h2>
+        <p>Tell us about your project &mdash; we'd love to help.</p>
+        <a asp-controller="Home" asp-action="Contact" class="dc-btn dc-btn-primary">
+            Start a Conversation
+            <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+        </a>
+    </div>
+</section>

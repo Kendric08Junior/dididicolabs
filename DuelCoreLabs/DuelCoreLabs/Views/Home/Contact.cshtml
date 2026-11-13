@@ -1,0 +1,181 @@
+@{
+    ViewData["Title"] = "Contact Us | Di-Core Labs";
+}
+
+<section class="dc-page-hero">
+    <div class="dc-wrap">
+        <span class="dc-eyebrow">Get In Touch</span>
+        <h1 class="dc-page-title">Let's Talk</h1>
+        <p class="dc-page-sub">Have a project, a question, or just want to say hello? We're here.</p>
+    </div>
+</section>
+
+<section style="border-bottom:1px solid var(--line);">
+    <div class="dc-wrap">
+        <div class="dc-contact-grid">
+
+            <!-- LEFT: CONTACT INFO -->
+            <div>
+                <h3 class="dc-contact-heading">Reach us directly.</h3>
+
+                <div class="dc-contact-item">
+                    <svg class="dc-ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+                    <div>
+                        <small>Email</small>
+                        <a href="mailto:hello@dicorelabs.com">hello@dicorelabs.com</a>
+                    </div>
+                </div>
+
+                <div class="dc-contact-item">
+                    <svg class="dc-ico" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                    <div>
+                        <small>Location</small>
+                        <span class="v">South Africa 🇿🇦</span>
+                    </div>
+                </div>
+
+                <div class="dc-contact-item">
+                    <svg class="dc-ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+                    <div>
+                        <small>Response Time</small>
+                        <span class="v">Within 24 hours</span>
+                    </div>
+                </div>
+
+                <div class="dc-contact-people">
+                    <div>
+                        <h4>Junior Dube</h4>
+                        <p class="dc-role">Co-Founder &amp; Lead Developer</p>
+                        <div class="dc-person-links">
+                            <a href="mailto:junior@dicorelabs.com">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+                                junior@dicorelabs.com
+                            </a>
+                            <a href="tel:+27678942415">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" /></svg>
+                                +27 67 894 2415
+                            </a>
+                            <a href="https://wa.me/27678942415" target="_blank" rel="noopener">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5z" /></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>Kananelo Motuba</h4>
+                        <p class="dc-role">Co-Founder &amp; Systems Architect</p>
+                        <div class="dc-person-links">
+                            <a href="mailto:kananelo@dicorelabs.com">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+                                kananelo@dicorelabs.com
+                            </a>
+                            <a href="tel:+27614467227">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" /></svg>
+                                +27 61 446 7227
+                            </a>
+                            <a href="https://wa.me/27614467227" target="_blank" rel="noopener">
+                                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.3L3 20.5l1.7-5.3A8.4 8.4 0 1 1 21 11.5z" /></svg>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: FORM -->
+            <div>
+                <h3 class="dc-contact-heading">Send us a message.</h3>
+
+                @if (TempData["ContactSuccess"] != null)
+                {
+                    <div class="dc-alert dc-alert-ok" role="status">@TempData["ContactSuccess"]</div>
+                }
+                @if (TempData["ContactError"] != null)
+                {
+                    <div class="dc-alert dc-alert-err" role="alert">@TempData["ContactError"]</div>
+                }
+
+                <form asp-controller="Home" asp-action="Contact" method="post" id="contactForm">
+
+                    <div class="dc-form-row">
+                        <div class="dc-field">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Your Name" required />
+                        </div>
+                        <div class="dc-field">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                        </div>
+                    </div>
+
+                    <div class="dc-form-row">
+                        <div class="dc-field">
+                            <label for="phone">Phone Number (optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+27 000 000 0000" />
+                        </div>
+                        <div class="dc-field">
+                            <label for="service">What Do You Need?</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option>Website Development</option>
+                                <option>System Development</option>
+                                <option>UI/UX Design</option>
+                                <option>Maintenance &amp; Support</option>
+                                <option>Something Else</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="dc-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="dc-btn dc-btn-primary">
+                        Send Message
+                        <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="dc-social">
+    <div class="dc-wrap">
+        <span class="dc-eyebrow">Stay Connected</span>
+        <h2 class="dc-section-title">Follow Us</h2>
+        <p class="dc-section-sub">Stay connected and keep up with our latest work.</p>
+
+        <div class="dc-social-grid">
+            <a href="https://www.facebook.com/people/Dual-Core-Labs/pfbid0Ndb2g8dTknkqdDXf9mNJoDw3XzLxd6dLvqS5ERs3wwUicFg7qLvLyKwhqD8vt9ELl/" target="_blank" rel="noopener" class="dc-social-card">
+                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M15 3h-2a4 4 0 0 0-4 4v3H6v4h3v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z" /></svg>
+                <div>
+                    <strong>Facebook</strong>
+                    <span>Di Core Labs &middot; Follow our page</span>
+                </div>
+                <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+            </a>
+
+            <a href="https://www.instagram.com/di.corelabs" target="_blank" rel="noopener" class="dc-social-card">
+                <svg class="dc-ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".6" /></svg>
+                <div>
+                    <strong>Instagram</strong>
+                    <span>@@di.corelabs &middot; See our latest work</span>
+                </div>
+                <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/company/dicorelabs" target="_blank" rel="noopener" class="dc-social-card">
+                <svg class="dc-ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>
+                <div>
+                    <strong>LinkedIn</strong>
+                    <span>Di Core Labs &middot; Connect with us</span>
+                </div>
+                <svg class="dc-arr" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9" /></svg>
+            </a>
+        </div>
+    </div>
+</section>
